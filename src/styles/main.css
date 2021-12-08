@@ -156,6 +156,7 @@ body {
   height: 100vh;
   background: url(/images/heros/hero-image_2.jpg) rgba(0, 0, 0, 0.75);
   background-blend-mode: overlay;
+  background-size: cover;
 }
 
 .hero-center {
