@@ -72,7 +72,7 @@
     text-align: left;
   }
 
-  .article-title-line {
+  .article-title__line {
     display: inline-block;
     width: 3rem;
     border: 1px solid var(--text-body-1-back-nav-footer);
