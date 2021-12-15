@@ -16,8 +16,8 @@ class NavInner extends HTMLElement {
       </div>
       <button id="hamburger">☰</button>
       <ul class="nav-list">
-        <li class="nav-item"><a href="">HOME</a></li>
-        <li class="nav-item"><a href="#">FAVOURITE</a></li>
+        <li class="nav-item"><a href="#/list">HOME</a></li>
+        <li class="nav-item"><a href="#/like">FAVOURITE</a></li>
         <li class="nav-item">
           <a href="https://www.linkedin.com/in/aji-prasetyo-b909aa222/"
             >ABOUT US</a

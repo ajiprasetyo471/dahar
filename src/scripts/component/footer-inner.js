@@ -24,9 +24,9 @@ class FooterInner extends HTMLElement {
         <div class="footer-item footer-item-link">
           <h4 class="footer-title-2">Our Menu</h4>
           <div class="footer-item-list-1">
-            <a href="" class="footer-link-1">Home</a>
-            <a href="" class="footer-link-1">Favourite</a>
-            <a href="" class="footer-link-1">About Us</a>
+            <a href="#/list" class="footer-link-1">Home</a>
+            <a href="#/like" class="footer-link-1">Favourite</a>
+            <a href="https://www.linkedin.com/in/aji-prasetyo-b909aa222/" class="footer-link-1">About Us</a>
           </div>
         </div>
         <div class="footer-item footer-item-link">

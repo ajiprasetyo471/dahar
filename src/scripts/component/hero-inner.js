@@ -18,7 +18,7 @@ class HeroInner extends HTMLElement {
       <p class="hero-desc">
         Lorem ipsum dolor sit amet consectetur adipisicing.
       </p>
-      <button onclick="window.location.href='#booking'" class="hero-btn btn">BOOKING</button>
+      <button onclick="window.location.href='#popular'" class="hero-btn btn">DISCOVER</button>
     </div>
     `;
   }

@@ -44,6 +44,7 @@ class BookingInner extends HTMLElement {
         </div>
         <div class="col-2">
           <select id="restaurant-select">
+            <option value="" selected disabled hidden>Choose here</option>
           </select>
         </div>
       </div>

@@ -7,7 +7,7 @@
   --back-body-1-text-head-footer: #ffffff;
   --text-jumbo-color: #f1f1f1;
   --back-body-2: #f6f6f6;
-  --back-body-3: #f5f5f6;
+  --back-body-3: #010102;
   --back-body-4: #fbfbfb;
   --frank-font-family: 'Frank Ruhl Libre', serif;
   --black-heading-1-2-jumbo-font-weight: 900;
@@ -27,22 +27,27 @@
   --main-transition: all 0.4s ease;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 576px) {
   :root {
     font-size: 18px;
   }
 
   /* Navbar */
+  .nav-list {
+    height: 40vh;
+    padding-top: 4.5rem;
+  }
+
   .nav-logo-detail {
-    left: 2.2rem;
+    left: 3.3rem;
   }
 
   .nav-title {
-    margin-left: 3.5rem;
+    margin-left: 4rem;
   }
 
   #hamburger {
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 2.9rem;
   }
 
   /* Hero */
@@ -51,7 +56,6 @@
   }
 
   /* Categories */
-
   .article-jumbo {
     position: absolute;
     display: inline-block;
@@ -61,13 +65,8 @@
     color: var(--text-jumbo-color);
   }
 
-  .categories-jumbo {
-    top: -5rem;
-    left: 15rem;
-  }
-
   .article-title {
-    margin-left: 1.9rem;
+    margin-left: 3.2rem;
     width: 50%;
     text-align: left;
   }
@@ -78,14 +77,10 @@
     border: 1px solid var(--text-body-1-back-nav-footer);
   }
 
-  .categories-center {
-    width: 90%;
-  }
-
   /* Popular */
   .popular-jumbo {
     top: -5rem;
-    left: 16rem;
+    left: 20rem;
   }
 
   .popular-img-cont {
@@ -93,14 +88,14 @@
   }
 
   .popular-center {
-    width: 90%;
+    width: 85%;
     grid-template-columns: 1fr 1fr;
-    gap: 2.5rem 1.5rem;
+    gap: 3rem 1.5rem;
   }
 
   /* Booking */
   .booking-center {
-    width: 90%;
+    width: 85%;
   }
 
   .booking-title {
@@ -115,7 +110,7 @@
 
   /* Footer */
   .footer-center {
-    width: 90%;
+    width: 85%;
   }
 
   .footer-content {
@@ -153,9 +148,38 @@
   .footer-item-list-2 {
     width: 100%;
   }
+
+  /* Detail Page */
+  .restaurant__image-container {
+    width: 85%;
+  }
+
+  .restaurant__detail {
+    width: 85%;
+  }
+
+  .restaurant__description {
+    width: 85%;
+  }
+
+  .restaurant__menu {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .restaurant__reviews {
+    width: 85%;
+  }
+
+  .restaurant__review {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   .article-title {
     width: 40%;
   }
@@ -165,7 +189,7 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 850px) {
   :root {
     font-size: 20px;
   }
@@ -176,7 +200,7 @@
   }
 
   .nav-logo-detail {
-    left: 4rem;
+    left: 5rem;
   }
 
   .nav-title {
@@ -218,16 +242,8 @@
   }
 
   /* Categories */
-  .categories-jumbo {
-    left: 25rem;
-  }
-
   .article-title {
     margin: auto;
-    width: 85%;
-  }
-
-  .categories-center {
     width: 85%;
   }
 
@@ -236,10 +252,14 @@
     left: 25rem;
   }
 
+  .popular-article-title {
+    margin-top: 2rem;
+  }
+
   .popular-center {
     width: 85%;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2.5rem 1rem;
+    gap: 3rem 1.5rem;
   }
 
   /* Booking */
@@ -267,13 +287,26 @@
     width: 75%;
   }
 
+  .review-row {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  .col-1-review {
+    width: 100%;
+  }
+
+  .col-2-review {
+    width: 100%;
+  }
+
   .booking-title {
     padding-top: 5rem;
     padding-bottom: 3rem;
   }
 
   .row button {
-    width: 35%;
+    width: 70%;
   }
 
   /* Footer */
@@ -295,12 +328,97 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  /* Detail */
+  .restaurant__top-container {
+    width: 85%;
+    margin: auto;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .restaurant__image-container {
+    width: 60%;
+  }
+
+  .restaurant__detail {
+    width: 40%;
+    margin-top: 6rem;
+  }
+
+  .restaurant__detail-container {
+    flex-direction: column;
+  }
+
+  .restaurant__title {
+    text-align: left;
+    width: 100%;
+  }
+
+  .restaurant__detail-rating {
+    width: 100%;
+    text-align: left;
+  }
+
+  .restaurant__detail-place {
+    width: 100%;
+  }
+
+  .restaurant__detail-categories {
+    justify-content: start;
+  }
+
+  .restaurant__info-top {
+    flex-direction: row;
+    width: 85%;
+    margin: 2rem auto;
+  }
+
+  .restaurant__overview {
+    width: 50%;
+  }
+
+  .restaurant__description {
+    width: 100%;
+    padding-right: 1rem;
+  }
+
+  .restaurant__menu {
+    width: 50%;
+    margin-top: 0;
+  }
+
+  .restaurant__foods {
+    border-right: none;
+  }
+
+  .restaurant__info-bottom {
+    flex-direction: row-reverse;
+    width: 85%;
+    margin: 4rem auto;
+  }
+
+  .restaurant__reviews {
+    margin-top: -0.1rem;
+  }
+
+  .restaurant__reviews-item {
+    width: 90%;
+  }
+
+  .restaurant__review {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1100px) {
   /* Navbar */
   .nav-logo-detail {
-    left: 5rem;
+    left: 6rem;
+  }
+
+  .nav-center {
+    width: 80%;
   }
 
   .nav-list {
@@ -315,14 +433,16 @@
     width: 22%;
   }
 
-  /* Categories */
-  .categories-jumbo {
-    left: 32rem;
+  .article-title {
+    width: 80%;
   }
 
   /* popular */
   .popular-jumbo {
-    left: 32rem;
+    left: 35rem;
+  }
+  .popular-center {
+    width: 80%;
   }
 
   .popular-img-cont {
@@ -331,12 +451,50 @@
 
   /* booking */
   .booking-center {
+    width: 80%;
     padding: 0 6rem 4rem 6rem;
   }
 
   /* footer */
+  .footer-center {
+    width: 80%;
+  }
+
   .footer-content {
     grid-template-columns: 1.2fr 1.1fr 0.7fr;
     gap: 7rem;
+  }
+
+  /* Detail */
+  .restaurant__top-container {
+    width: 80%;
+  }
+
+  .restaurant__info-top {
+    width: 80%;
+  }
+
+  .restaurant__description {
+    padding-right: 2rem;
+  }
+
+  .restaurant__info-bottom {
+    width: 80%;
+  }
+
+  .restaurant__reviews {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* Navbar */
+  .nav-logo-detail {
+    left: 7rem;
+  }
+
+  /* popular */
+  .popular-jumbo {
+    left: 38rem;
   }
 }
