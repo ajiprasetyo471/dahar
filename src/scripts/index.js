@@ -13,6 +13,7 @@ const app = new App({
   button: document.querySelector('#hamburger'),
   drawer: document.querySelector('.nav-list'),
   content: document.querySelector('#main'),
+  link: document.querySelector('.nav-list'),
 });
 
 window.addEventListener('hashchange', () => {

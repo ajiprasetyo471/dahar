@@ -48,7 +48,7 @@ const Detail = {
           <form action="">
           <div class="review-row row">
             <div class="col-2 col-2-review">
-              <span class="review__note">Refresh/reload page to see your review</span>
+              <span class="review__note">*Reload/Swipe up page to see your review</span>
               </div>
             </div>
             <div class="review-row row">

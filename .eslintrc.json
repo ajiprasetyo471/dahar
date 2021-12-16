@@ -22,6 +22,7 @@
     "comma-dangle": "off",
     "no-restricted-globals": "off",
     "no-param-reassign": "off",
-    "no-alert": "off"
+    "no-alert": "off",
+    "object-curly-newline": "off"
   }
 }

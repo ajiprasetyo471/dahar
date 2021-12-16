@@ -41,16 +41,16 @@ const createLikedButtonTemplate = () => `
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="popular-item">
-    <div class="popular-img-cont"><a href='${`/#/detail/${restaurant.id}`}'>
-      <img
+    <div class="item-link" onclick="location.href='${`/#/detail/${restaurant.id}`}';  window.scrollTo(0,0);" style="cursor: pointer;">
+      <div class="popular-img-cont">
+        <img
         src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
         alt="gambar ${restaurant.name}"
         class="popular-img"
-      /></a>
+        />
+      </div>
+      <h4 class="popular-title">${restaurant.name}</h4>
     </div>
-    <h4 class="popular-title"><a href='${`/#/detail/${restaurant.id}`}'>${
-  restaurant.name
-}</a></h4>
     <div class="popular-loc-rating">
       <span class="popular-loc"
         ><i class="fas fa-map-marker-alt"></i> ${restaurant.city}</span
@@ -59,7 +59,7 @@ const createRestaurantItemTemplate = (restaurant) => `
         ><i class="far fa-star"></i> ${restaurant.rating}</span
       >
     </div>
-    <p class="popular-desc">${restaurant.description.slice(0, 150)}...</p>
+    <p class="popular-desc">${restaurant.description}</p>
   </div>
 `;
 

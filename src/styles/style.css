@@ -277,11 +277,6 @@ body {
   line-height: var(--heading-2-3-line-height);
 }
 
-.popular-title a {
-  color: var(--text-body-1-back-nav-footer);
-  text-decoration: none;
-}
-
 .popular-loc-rating {
   padding-top: 0.7rem;
   font-family: var(--lato-font-family);
@@ -303,6 +298,10 @@ body {
   color: var(--text-body-3);
   line-height: var(--body-text-line-height);
   padding-top: 0.3rem;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 5rem;
 }
 
 /* Booking */
@@ -765,8 +764,8 @@ body {
 }
 
 .spinner-motion {
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.1rem;
+  width: 2.1rem;
   border-radius: 50%;
   vertical-align: text-bottom;
   display: inline-block;

@@ -14,11 +14,11 @@ class NavInner extends HTMLElement {
         />
         <span class="nav-title" tabindex="0">Dahar</span>
       </div>
-      <button id="hamburger">☰</button>
+      <button id="hamburger" aria-label="hamburger buton">☰</button>
       <ul class="nav-list">
-        <li class="nav-item"><a href="#/list">HOME</a></li>
-        <li class="nav-item"><a href="#/like">FAVOURITE</a></li>
-        <li class="nav-item">
+        <li class="nav-item" onclick="window.scrollTo(0,0);"><a href="#/list">HOME</a></li>
+        <li class="nav-item" onclick="window.scrollTo(0,0);"><a href="#/like">FAVOURITE</a></li>
+        <li class="nav-item" onclick="window.scrollTo(0,0);">
           <a href="https://www.linkedin.com/in/aji-prasetyo-b909aa222/"
             >ABOUT US</a
           >
