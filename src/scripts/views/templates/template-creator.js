@@ -30,13 +30,13 @@ const createSpanCategories = (category) => `
 `;
 
 const createLikeButtonTemplate = () => `
-<button aria-label="like this movie" id="likeButton" class="like">
+<button aria-label="like this restaurant" id="likeButton" class="like">
   <i class="fa fa-heart" aria-hidden="true"></i> <span> Add to Favorite</span>
 </button>
 `;
 
 const createLikedButtonTemplate = () => `
-<button aria-label="unlike this movie" id="likeButton" class="like liked"><i class="fa fa-heart" aria-hidden="true"></i> <span> Remove Favorite</span></button>
+<button aria-label="unlike this restaurant" id="likeButton" class="like liked"><i class="fa fa-heart" aria-hidden="true"></i> <span> Remove Favorite</span></button>
 `;
 
 const createRestaurantItemTemplate = (restaurant) => `

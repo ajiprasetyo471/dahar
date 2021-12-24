@@ -23,6 +23,11 @@
     "no-restricted-globals": "off",
     "no-param-reassign": "off",
     "no-alert": "off",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "no-undef": "off",
+    "no-prototype-builtins": "off",
+    "consistent-return": "off",
+    "eqeqeq": "off",
+    "no-return-assign": "off"
   }
 }
