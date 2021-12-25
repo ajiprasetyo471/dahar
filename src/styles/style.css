@@ -153,10 +153,14 @@ body {
 
 /* Hero */
 #hero {
-  height: 100vh;
-  background: url(/images/heros/hero-image_2.jpg) rgba(0, 0, 0, 0.75);
-  background-blend-mode: overlay;
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)),
+    url(/images/heros/hero-image_2-small.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
 }
 
 .hero-center {

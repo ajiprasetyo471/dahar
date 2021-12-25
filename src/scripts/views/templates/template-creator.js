@@ -2,7 +2,7 @@ import CONFIG from '../../globals/config';
 
 const createRestaurantImageTemplate = (restaurant) => `
   <img
-      src="${CONFIG.BASE_IMAGE_URL + restaurant.restaurant.pictureId}"
+      src="${CONFIG.BASE_IMAGE_URL_MEDIUM + restaurant.restaurant.pictureId}"
       alt="gambar ${restaurant.restaurant.name}"
       class="restaurant__image" tabindex="0"
     />
@@ -43,11 +43,19 @@ const createRestaurantItemTemplate = (restaurant) => `
   <div class="popular-item">
     <div class="item-link" onclick="location.href='${`/#/detail/${restaurant.id}`}';  window.scrollTo(0,0);" style="cursor: pointer;">
       <div class="popular-img-cont">
-        <img
-        src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}"
-        alt="gambar ${restaurant.name}"
-        class="popular-img"
-        />
+        <picture>
+          <source media="(max-width: 576px)" data-srcset="${
+            CONFIG.BASE_IMAGE_URL_SMALL + restaurant.pictureId
+          }"
+          alt="gambar ${restaurant.name}"
+          class="popular-img lazyload"
+          />
+          <img
+          data-src="${CONFIG.BASE_IMAGE_URL_MEDIUM + restaurant.pictureId}"
+          alt="gambar ${restaurant.name}"
+          class="popular-img lazyload"
+          />
+        </picture>
       </div>
       <h4 class="popular-title">${restaurant.name}</h4>
     </div>
