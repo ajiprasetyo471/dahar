@@ -1,7 +1,6 @@
 import 'regenerator-runtime';
 import 'lazysizes';
 import 'lazysizes/plugins/parent-fit/ls.parent-fit';
-import '@fortawesome/fontawesome-free/js/all';
 import '../styles/style.css';
 import '../styles/responsive.css';
 
