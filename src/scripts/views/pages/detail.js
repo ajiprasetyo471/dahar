@@ -46,7 +46,7 @@ const Detail = {
         </div>
         <div class="restaurant__review">
           <h3 class="restaurant__section-title" tabindex="0">Write your review</h3>
-          <form action="">
+          <form id="restaurant__review__form" action="">
           <div class="review-row row">
             <div class="col-2 col-2-review">
               <span class="review__note">*Reload/Swipe up page to see your review</span>

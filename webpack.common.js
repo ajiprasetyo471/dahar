@@ -54,7 +54,10 @@ module.exports = {
         }),
       ],
     }),
-    new BundleAnalyzerPlugin(),
+    new BundleAnalyzerPlugin({
+      AnalyserNode: 'static',
+      openAnalyzer: false,
+    }),
   ],
   optimization: {
     splitChunks: {
